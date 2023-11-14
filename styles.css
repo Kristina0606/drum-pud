@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+@keyframes visual {
+    0% {
+        left: 20%;
+        height: 75px;
+        width: 75px;
+    }
+
+    50% {
+        height: 100px;
+        width: 100px;
+    }
+
+  75% {
+      left: 80%;
+      height: 50px;
+      width: 50px;
+  }
+}
+
+@keyframes click {
+    from {
+        opacity: .7;
+    }
+
+    50% {
+        opacity: .2;
+    }
+
+    to {
+        opacity: 1;
+    }
+    
+}
+
+
+.visual {
+    width: 100px;
+    height: 100px;
+    top: 20%;
+    border-radius: 50%;
+    position: absolute;
+    animation: visual 1s linear;
+    
+    
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    position: relative;
+}
+
+.heading {
+    font-size: 48px;
+    font-weight: 400;
+    padding-top: 48px;
+}
+
+.pads {
+    display: flex;
+    width: 100%;
+
+
+}
+
+.pad {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    height: 200px;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+
+}
+
+.pad-1 {
+    background-color: red;
+}
+
+.pad-2 {
+    background-color: aqua;
+}
+
+.pad-3 {
+    background-color: purple;
+}
+
+.pad-4 {
+    background-color: yellow;
+}
+
+.pad-5 {
+    background-color: plum;
+}
+
+.pad-6 {
+    background-color: aquamarine;
+}
